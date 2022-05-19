@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="" />
+    <meta name="referrer" content="no-referrer" />
+    <title>後台家具電商</title>
+    <link rel="shortcut icon" href="" />
+    <link rel="bookmark" href="" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/loaders.css/0.1.2/loaders.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/c3/0.7.18/c3.css"
+    />
+
+    <link rel="stylesheet" href="./css/admin.css" />
+  </head>
+
+  <body>
+    <div class="loader-inner ball-spin-fade-loader"></div>
+
+    <nav class="topBar">
+      <div class="wrap">
+        <h1><a href="#" class="logo">WOWOROOM</a></h1>
+        <span class="material-icons menuToggle"> menu </span>
+        <ul class="topBar-menu">
+          <li><a href="#">後台管理</a></li>
+          <li><a href="#">管理員登入</a></li>
+          <li><a href="./index.html">回到前台</a></li>
+        </ul>
+      </div>
+    </nav>
+    <section class="wrap chartDisplay">
+      <select name="" id="" class="chartSelect">
+        <option value="全部" selected>全部</option>
+        <option value="全產品類別">全產品類別</option>
+        <option value="全品項">全品項</option>
+      </select>
+    </section>
+
+    <section class="wrap allCategory">
+      <h2 class="section-title">全產品類別營收比重</h2>
+      <div id="chartAllCategory"></div>
+    </section>
+    <section class="wrap allItems">
+      <h2 class="section-title">全品項營收比重</h2>
+      <div id="chartAllItems"></div>
+    </section>
+
+    <section class="wrap orderPage-list">
+      <a href="#" class="discardAllBtn">清除全部訂單</a>
+      <div class="orderTableWrap">
+        <table class="orderPage-table">
+          <thead>
+            <tr>
+              <th>訂單編號</th>
+              <th>聯絡人</th>
+              <th>聯絡地址</th>
+              <th>電子郵件</th>
+              <th>訂單品項</th>
+              <th>訂單日期</th>
+              <th>訂單狀態</th>
+              <th>操作</th>
+            </tr>
+          </thead>
+          <tbody class="js-orderList"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- loader.css -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/loaders.css/0.1.2/loaders.css.js"></script>
+    <!-- C3 D3 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.16.0/d3.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/c3/0.7.18/c3.js"></script>
+    <!-- axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+    <script src="./js/admin-animation.js"></script>
+    <script src="./js/config.js"></script>
+    <script src="./js/admin.js"></script>
+  </body>
+</html>
